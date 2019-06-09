@@ -1,0 +1,57 @@
+--- include/fxdefs.h	Sun Apr 14 03:09:12 2019
++++ include/fxdefs.h	Sun May 26 19:28:34 2019
+@@ -27,7 +27,7 @@
+ 
+ // Placement new
+ #include <new>
+-
++#include <stdint.h>
+ 
+ // Path separator
+ #ifdef WIN32
+@@ -297,15 +297,15 @@
+ 
+ // Integral types large enough to hold value of a pointer
+ #if defined(LP64) || defined(ILP32)     // Long for LP64 and ILP32 models
+-typedef long                    FXival;
+-typedef unsigned long           FXuval;
++typedef intptr_t                FXival;
++typedef uintptr_t               FXuval;
+ #elif defined(LLP64)                    // Long long for LLP64 models
+ #if defined(_MSC_VER) && (_MSC_VER < 1900)
+ typedef __int64                 FXival;
+ typedef unsigned __int64        FXuval;
+ #else
+-typedef long long               FXival;
+-typedef unsigned long long      FXuval;
++typedef intptr_t                FXival;
++typedef uintptr_t               FXuval;
+ #endif
+ #endif
+ 
+--- lib/FXGLContext.cpp	Fri Jun 15 06:04:36 2018
++++ lib/FXGLContext.cpp	Sun May 19 23:31:46 2019
+@@ -599,7 +599,7 @@
+ /*******************************************************************************/
+ 
+ 
+-#if defined(HAVE_XFT_H) && defined(HAVE_GL_H)
++#if defined(HAVE_XFT_H) && defined(HAVE_GL_H) && !defined(WIN32)
+ 
+ // Xft version
+ static FXbool glXUseXftFont(XftFont* font,int first,int count,int listBase){
+--- lib/fxjpegio.cpp	Fri Mar 16 03:34:58 2018
++++ lib/fxjpegio.cpp	Sun May 19 23:52:24 2019
+@@ -29,10 +29,12 @@
+ #ifdef HAVE_JPEG_H
+ #include <setjmp.h>
+ #undef FAR
++#include <stdint.h>
+ extern "C" {
+ /* Theo Veenker <Theo.Veenker@let.uu.nl> says this is needed for CYGWIN */
+ #if (defined(__CYGWIN__) || defined(__MINGW32__) || defined(_MSC_VER)) && !defined(XMD_H)
+ #define XMD_H
++typedef void VOID;
+ typedef short INT16;
+ typedef int INT32;
+ #include "jpeglib.h"

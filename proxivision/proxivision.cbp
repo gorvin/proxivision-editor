@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="proxivision" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../builds/bin/proxivision" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../builds/objd/proxivision" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-DDEBUG" />
+					<Add option="-D_DEBUG" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="../builds/bin/proxivision" prefix_auto="0" extension_auto="1" />
+				<Option object_output="../builds/objr/proxivision" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-DNDEBUG" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wshadow" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+			<Add option="-Woverloaded-virtual" />
+			<Add option="-Dxxx_FOX_1_6" />
+			<Add option="-DFOX_1_7" />
+			<Add option="-DFX_NO_GLOBAL_NAMESPACE" />
+			<Add option="-DWIN32" />
+			<Add option="-D_WIN32" />
+			<Add option="-D_WINDOWS" />
+			<Add option="-DUNICODE" />
+			<Add directory="/usr/include/libxml2" />
+			<Add directory="../../../../git-sdk-64/mingw64/include/libxml2" />
+			<Add directory="../builds/include/fox-1.7" />
+			<Add directory="C:/xxx_msys64/mingw64/include/fox-1.6/" />
+			<Add directory="../external/scintilla/include" />
+			<Add directory="xxx/../external/libxsettings-client-0.17" />
+			<Add directory="../external/xdgmime/src" />
+		</Compiler>
+		<Linker>
+			<Add option="-lxdgmime" />
+			<Add option="-liberty" />
+			<Add option="-lscintilla" />
+			<Add option="-lFOX-1.7" />
+			<Add option="-lgdi32" />
+			<Add option="-ljpeg" />
+			<Add option="-lpng" />
+			<Add option="-ltiff" />
+			<Add option="-lstdc++" />
+			<Add option="-lxml2" />
+			<Add option="-lws2_32" />
+			<Add option="-lImm32" />
+			<Add directory="../builds/lib" />
+			<Add directory="../../../../git-sdk-64/mingw64/lib" />
+			<Add directory="../../../../git-sdk-64/usr/lib" />
+			<Add directory="xx../external/fox-1.7.65/lib/.libs" />
+		</Linker>
+		<Unit filename="DocumentList.cxx" />
+		<Unit filename="DocumentList.h" />
+		<Unit filename="GuidedSplitter.cxx" />
+		<Unit filename="GuidedSplitter.h" />
+		<Unit filename="IconCache.cxx" />
+		<Unit filename="IconCache.h" />
+		<Unit filename="LabelPopup.cxx" />
+		<Unit filename="LabelPopup.h" />
+		<Unit filename="Project.cxx" />
+		<Unit filename="Project.h" />
+		<Unit filename="ProjectList.cxx" />
+		<Unit filename="ProjectList.h" />
+		<Unit filename="ProjectXML.cxx" />
+		<Unit filename="ProjectXML.h" />
+		<Unit filename="Proxivision.cxx" />
+		<Unit filename="Proxivision.h" />
+		<Unit filename="ProxivisionWindow.cxx" />
+		<Unit filename="ProxivisionWindow.h" />
+		<Unit filename="ScintillaEditor.cxx" />
+		<Unit filename="ScintillaEditor.h" />
+		<Unit filename="SearchReplaceDialog.cxx" />
+		<Unit filename="SearchReplaceDialog.h" />
+		<Unit filename="SourceLanguage.cxx" />
+		<Unit filename="SourceLanguage.h" />
+		<Unit filename="SourceLanguage_init.cxx" />
+		<Unit filename="StringPartitioner.h" />
+		<Unit filename="TabDockBar.cxx" />
+		<Unit filename="TabDockBar.h" />
+		<Unit filename="stdutils.h" />
+		<Unit filename="stdutils_impl.h" />
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<search_path add="/usr/lib/debug" />
+				<search_path add="/usr/lib/debug/lib" />
+				<search_path add="/usr/lib/debug/usr/lib" />
+				<search_path add="..\..\..\git-sdk-64\usr\lib" />
+				<remote_debugging>
+					<options conn_type="0" serial_baud="115200" additional_cmds="directory D:/WorkPrivate/Proxivision/external/fox-1.7.65/&#x0A;directory D:/WorkPrivate/Proxivision/external/fox-1.7.65/include&#x0A;directory D:/WorkPrivate/Proxivision/external/fox-1.7.65/lib" />
+				</remote_debugging>
+			</debugger>
+			<envvars set="default" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
