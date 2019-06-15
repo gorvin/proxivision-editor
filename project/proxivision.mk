@@ -23,6 +23,7 @@ INCLUDES    := \
 	-I$(TOP)proxivision \
 	-I$(TOP)fox/include \
 	-I$(TOP)scintilla/include \
+	-I$(TOP)scintilla/fox \
 	-I$(TOP)picojson \
 	-I$(TOP)xdgmime/src \
 	-I/mingw64/include/libxml2
