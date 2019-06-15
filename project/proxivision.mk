@@ -163,19 +163,27 @@ all Release Debug: $(TARGET_NAME)
 # search path for source files and other prerequisites
 VPATH=$(TOP)
 
+define xxd_full
+$(subst -,_,$(subst /,_,$(subst .,_,$<)))
+endef
+
+define xxd_short
+icon_$(subst -,_,$(subst .,_,$(notdir $(basename $1))))_ptr
+endef
+
 # unsigned char ___proxivision_proxivision_png[] = {
 %.o: %.png
 	@echo "PNG Compiling $@"
 	mkdir -p '$(dir $@)'
 	xxd -i "$<" '$(addsuffix .cxx,$(basename $@))'
-	echo "unsigned char const* $(subst -,_,$(subst .,_,$(notdir $<)))_ptr = $(subst -,_,$(subst /,_,$(subst .,_,$<)));" >> '$(addsuffix .cxx,$(basename $@))'
+	echo "unsigned char const* $(call xxd_short,$<) = $(call xxd_full,$<);" >> '$(addsuffix .cxx,$(basename $@))'
 	$(CCTOOL) $(INCLUDES) $(CCFLAGS) -o $@ -c '$(addsuffix .cxx,$(basename $@))'
 
 %.o: %.gif
 	@echo "GIF Compiling $@"
 	mkdir -p '$(dir $@)'
 	xxd -i "$<" '$(addsuffix .cxx,$(basename $@))'
-	echo "unsigned char const* $(subst -,_,$(subst .,_,$(notdir $<)))_png_ptr = $(subst -,_,$(subst /,_,$(subst .,_,$<)));" >> '$(addsuffix .cxx,$(basename $@))'
+	echo "unsigned char const* $(call xxd_short,$<) = $(call xxd_full,$<);" >> '$(addsuffix .cxx,$(basename $@))'
 	$(CCTOOL) $(INCLUDES) $(CCFLAGS) -o $@ -c '$(addsuffix .cxx,$(basename $@))'
 
 %.depend : %.c

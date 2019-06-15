@@ -16,7 +16,7 @@ ifeq ($(_DEBUG), 1)
 export _DEBUG=1
 endif
 
-.PHONY: all fox scintilla xdgmime proxivision clean-all clean-fox clean-scintilla clean-xdgmime clean-proxivision
+.PHONY: all fox scintilla proxivision clean-all clean-fox clean-scintilla clean-proxivision
 
 all: fox
 
@@ -27,10 +27,6 @@ fox:
 scintilla:
 	mkdir -p bld
 	$(MAKE) -C bld -f $(THISDIR)project/scintilla.mk ROOT_DIR=$(THISDIR)
-
-xdgmime:
-	mkdir -p bld
-	$(MAKE) -C bld -f $(THISDIR)project/xdgmime.mk ROOT_DIR=$(THISDIR)
 
 proxivision: 
 	mkdir -p bld
@@ -44,9 +40,6 @@ clean-fox:
 
 clean-scintilla:
 	rm -rf bld/scintilla/ bld/libscintilla*
-
-clean-xdgmime:
-	rm -rf bld/xdgmime/ bld/libxdgmime*
 
 clean-proxivision:
 	rm -rf bld/proxivision/ bld/proxivision.exe

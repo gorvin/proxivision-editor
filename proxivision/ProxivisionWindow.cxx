@@ -14,89 +14,89 @@
 
 
 // extern unsigned int proxivision_png_len;
-extern unsigned char const* proxivision_png_ptr;
-extern unsigned char const* document_new_gif_ptr;
-extern unsigned char const* document_open_gif_ptr;
-extern unsigned char const* document_save_gif_ptr;
-extern unsigned char const* document_save_as_gif_ptr;
-extern unsigned char const* document_save_all_gif_ptr;
-extern unsigned char const* edit_cut_gif_ptr;
-extern unsigned char const* edit_copy_gif_ptr;
-extern unsigned char const* edit_delete_gif_ptr;
-extern unsigned char const* edit_paste_gif_ptr;
-extern unsigned char const* edit_redo_gif_ptr;
-extern unsigned char const* edit_undo_gif_ptr;
-extern unsigned char const* format_shift_left_gif_ptr;
-extern unsigned char const* format_shift_right_gif_ptr;
-extern unsigned char const* search_gif_ptr;
-extern unsigned char const* search_next_gif_ptr;
-extern unsigned char const* search_prev_gif_ptr;
-extern unsigned char const* go_backward_gif_ptr;
-extern unsigned char const* go_forward_gif_ptr;
-extern unsigned char const* _blank_png_ptr;
-extern unsigned char const* _page_png_ptr;
-extern unsigned char const* aac_png_ptr;
-extern unsigned char const* ai_png_ptr;
-extern unsigned char const* aiff_png_ptr;
-extern unsigned char const* avi_png_ptr;
-extern unsigned char const* bmp_png_ptr;
-extern unsigned char const* c_png_ptr;
-extern unsigned char const* cpp_png_ptr;
-extern unsigned char const* css_png_ptr;
-extern unsigned char const* csv_png_ptr;
-extern unsigned char const* dat_png_ptr;
-extern unsigned char const* dmg_png_ptr;
-extern unsigned char const* doc_png_ptr;
-extern unsigned char const* dotx_png_ptr;
-extern unsigned char const* dwg_png_ptr;
-extern unsigned char const* dxf_png_ptr;
-extern unsigned char const* eps_png_ptr;
-extern unsigned char const* exe_png_ptr;
-extern unsigned char const* flv_png_ptr;
-extern unsigned char const* gif_png_ptr;
-extern unsigned char const* h_png_ptr;
-extern unsigned char const* hpp_png_ptr;
-extern unsigned char const* html_png_ptr;
-extern unsigned char const* ics_png_ptr;
-extern unsigned char const* iso_png_ptr;
-extern unsigned char const* java_png_ptr;
-extern unsigned char const* jpg_png_ptr;
-extern unsigned char const* js_png_ptr;
-extern unsigned char const* key_png_ptr;
-extern unsigned char const* less_png_ptr;
-extern unsigned char const* mid_png_ptr;
-extern unsigned char const* mp3_png_ptr;
-extern unsigned char const* mp4_png_ptr;
-extern unsigned char const* mpg_png_ptr;
-extern unsigned char const* odf_png_ptr;
-extern unsigned char const* ods_png_ptr;
-extern unsigned char const* odt_png_ptr;
-extern unsigned char const* otp_png_ptr;
-extern unsigned char const* ots_png_ptr;
-extern unsigned char const* ott_png_ptr;
-extern unsigned char const* pdf_png_ptr;
-extern unsigned char const* php_png_ptr;
-extern unsigned char const* png_png_ptr;
-extern unsigned char const* ppt_png_ptr;
-extern unsigned char const* psd_png_ptr;
-extern unsigned char const* py_png_ptr;
-extern unsigned char const* qt_png_ptr;
-extern unsigned char const* rar_png_ptr;
-extern unsigned char const* rb_png_ptr;
-extern unsigned char const* rtf_png_ptr;
-extern unsigned char const* sass_png_ptr;
-extern unsigned char const* scss_png_ptr;
-extern unsigned char const* sql_png_ptr;
-extern unsigned char const* tga_png_ptr;
-extern unsigned char const* tgz_png_ptr;
-extern unsigned char const* tiff_png_ptr;
-extern unsigned char const* txt_png_ptr;
-extern unsigned char const* wav_png_ptr;
-extern unsigned char const* xls_png_ptr;
-extern unsigned char const* xlsx_png_ptr;
-extern unsigned char const* xml_png_ptr;
-extern unsigned char const* yml_png_ptr;
-extern unsigned char const* zip_png_ptr;
+extern unsigned char const* icon_proxivision_ptr;
+extern unsigned char const* icon_document_new_ptr;
+extern unsigned char const* icon_document_open_ptr;
+extern unsigned char const* icon_document_save_ptr;
+extern unsigned char const* icon_document_save_as_ptr;
+extern unsigned char const* icon_document_save_all_ptr;
+extern unsigned char const* icon_edit_cut_ptr;
+extern unsigned char const* icon_edit_copy_ptr;
+extern unsigned char const* icon_edit_delete_ptr;
+extern unsigned char const* icon_edit_paste_ptr;
+extern unsigned char const* icon_edit_redo_ptr;
+extern unsigned char const* icon_edit_undo_ptr;
+extern unsigned char const* icon_format_shift_left_ptr;
+extern unsigned char const* icon_format_shift_right_ptr;
+extern unsigned char const* icon_search_ptr;
+extern unsigned char const* icon_search_next_ptr;
+extern unsigned char const* icon_search_prev_ptr;
+extern unsigned char const* icon_go_backward_ptr;
+extern unsigned char const* icon_go_forward_ptr;
+extern unsigned char const* icon__blank_ptr;
+extern unsigned char const* icon__page_ptr;
+extern unsigned char const* icon_aac_ptr;
+extern unsigned char const* icon_ai_ptr;
+extern unsigned char const* icon_aiff_ptr;
+extern unsigned char const* icon_avi_ptr;
+extern unsigned char const* icon_bmp_ptr;
+extern unsigned char const* icon_c_ptr;
+extern unsigned char const* icon_cpp_ptr;
+extern unsigned char const* icon_css_ptr;
+extern unsigned char const* icon_csv_ptr;
+extern unsigned char const* icon_dat_ptr;
+extern unsigned char const* icon_dmg_ptr;
+extern unsigned char const* icon_doc_ptr;
+extern unsigned char const* icon_dotx_ptr;
+extern unsigned char const* icon_dwg_ptr;
+extern unsigned char const* icon_dxf_ptr;
+extern unsigned char const* icon_eps_ptr;
+extern unsigned char const* icon_exe_ptr;
+extern unsigned char const* icon_flv_ptr;
+extern unsigned char const* icon_gif_ptr;
+extern unsigned char const* icon_h_ptr;
+extern unsigned char const* icon_hpp_ptr;
+extern unsigned char const* icon_html_ptr;
+extern unsigned char const* icon_ics_ptr;
+extern unsigned char const* icon_iso_ptr;
+extern unsigned char const* icon_java_ptr;
+extern unsigned char const* icon_jpg_ptr;
+extern unsigned char const* icon_js_ptr;
+extern unsigned char const* icon_key_ptr;
+extern unsigned char const* icon_less_ptr;
+extern unsigned char const* icon_mid_ptr;
+extern unsigned char const* icon_mp3_ptr;
+extern unsigned char const* icon_mp4_ptr;
+extern unsigned char const* icon_mpg_ptr;
+extern unsigned char const* icon_odf_ptr;
+extern unsigned char const* icon_ods_ptr;
+extern unsigned char const* icon_odt_ptr;
+extern unsigned char const* icon_otp_ptr;
+extern unsigned char const* icon_ots_ptr;
+extern unsigned char const* icon_ott_ptr;
+extern unsigned char const* icon_pdf_ptr;
+extern unsigned char const* icon_php_ptr;
+extern unsigned char const* icon_png_ptr;
+extern unsigned char const* icon_ppt_ptr;
+extern unsigned char const* icon_psd_ptr;
+extern unsigned char const* icon_py_ptr;
+extern unsigned char const* icon_qt_ptr;
+extern unsigned char const* icon_rar_ptr;
+extern unsigned char const* icon_rb_ptr;
+extern unsigned char const* icon_rtf_ptr;
+extern unsigned char const* icon_sass_ptr;
+extern unsigned char const* icon_scss_ptr;
+extern unsigned char const* icon_sql_ptr;
+extern unsigned char const* icon_tga_ptr;
+extern unsigned char const* icon_tgz_ptr;
+extern unsigned char const* icon_tiff_ptr;
+extern unsigned char const* icon_txt_ptr;
+extern unsigned char const* icon_wav_ptr;
+extern unsigned char const* icon_xls_ptr;
+extern unsigned char const* icon_xlsx_ptr;
+extern unsigned char const* icon_xml_ptr;
+extern unsigned char const* icon_yml_ptr;
+extern unsigned char const* icon_zip_ptr;
 
 
 static struct {
@@ -104,90 +104,90 @@ static struct {
   unsigned char const* data;
   FX::FXIcon* icon;
 } embeddedIcons[] = {
-  { "proxivision", proxivision_png_ptr, nullptr },
-  { "document-new", document_new_gif_ptr, nullptr },
-  { "document-open", document_open_gif_ptr, nullptr },
-  { "document-save", document_save_gif_ptr, nullptr },
-  { "document-save-as", document_save_as_gif_ptr, nullptr },
-  { "document-save-all", document_save_all_gif_ptr, nullptr },
-  { "edit-cut", edit_cut_gif_ptr, nullptr },
-  { "edit-copy", edit_copy_gif_ptr, nullptr },
-  { "edit-delete", edit_delete_gif_ptr, nullptr },
-  { "edit-paste", edit_paste_gif_ptr, nullptr },
-  { "edit-redo", edit_redo_gif_ptr, nullptr },
-  { "edit-undo", edit_undo_gif_ptr, nullptr },
-  { "format-shift-left", format_shift_left_gif_ptr, nullptr },
-  { "format-shift-right", format_shift_right_gif_ptr, nullptr },
-  { "search", search_gif_ptr, nullptr },
-  { "search-next", search_next_gif_ptr, nullptr },
-  { "search-prev", search_prev_gif_ptr, nullptr },
-  { "go-backward", go_backward_gif_ptr, nullptr },
-  { "go-forward", go_forward_gif_ptr, nullptr },
-  { "fonts", go_forward_gif_ptr, nullptr },
-  { "filetype-_blank", _blank_png_ptr, nullptr },
-  { "filetype-_page", _page_png_ptr, nullptr },
-  { "filetype-aac", aac_png_ptr, nullptr },
-  { "filetype-ai", ai_png_ptr, nullptr },
-  { "filetype-aiff", aiff_png_ptr, nullptr },
-  { "filetype-avi", avi_png_ptr, nullptr },
-  { "filetype-bmp", bmp_png_ptr, nullptr },
-  { "filetype-c", c_png_ptr, nullptr },
-  { "filetype-cpp", cpp_png_ptr, nullptr },
-  { "filetype-css", css_png_ptr, nullptr },
-  { "filetype-csv", csv_png_ptr, nullptr },
-  { "filetype-dat", dat_png_ptr, nullptr },
-  { "filetype-dmg", dmg_png_ptr, nullptr },
-  { "filetype-doc", doc_png_ptr, nullptr },
-  { "filetype-dotx", dotx_png_ptr, nullptr },
-  { "filetype-dwg", dwg_png_ptr, nullptr },
-  { "filetype-dxf", dxf_png_ptr, nullptr },
-  { "filetype-eps", eps_png_ptr, nullptr },
-  { "filetype-exe", exe_png_ptr, nullptr },
-  { "filetype-flv", flv_png_ptr, nullptr },
-  { "filetype-gif", gif_png_ptr, nullptr },
-  { "filetype-h", h_png_ptr, nullptr },
-  { "filetype-hpp", hpp_png_ptr, nullptr },
-  { "filetype-html", html_png_ptr, nullptr },
-  { "filetype-ics", ics_png_ptr, nullptr },
-  { "filetype-iso", iso_png_ptr, nullptr },
-  { "filetype-java", java_png_ptr, nullptr },
-  { "filetype-jpg", jpg_png_ptr, nullptr },
-  { "filetype-js", js_png_ptr, nullptr },
-  { "filetype-key", key_png_ptr, nullptr },
-  { "filetype-less", less_png_ptr, nullptr },
-  { "filetype-mid", mid_png_ptr, nullptr },
-  { "filetype-mp3", mp3_png_ptr, nullptr },
-  { "filetype-mp4", mp4_png_ptr, nullptr },
-  { "filetype-mpg", mpg_png_ptr, nullptr },
-  { "filetype-odf", odf_png_ptr, nullptr },
-  { "filetype-ods", ods_png_ptr, nullptr },
-  { "filetype-odt", odt_png_ptr, nullptr },
-  { "filetype-otp", otp_png_ptr, nullptr },
-  { "filetype-ots", ots_png_ptr, nullptr },
-  { "filetype-ott", ott_png_ptr, nullptr },
-  { "filetype-pdf", pdf_png_ptr, nullptr },
-  { "filetype-php", php_png_ptr, nullptr },
-  { "filetype-png", png_png_ptr, nullptr },
-  { "filetype-ppt", ppt_png_ptr, nullptr },
-  { "filetype-psd", psd_png_ptr, nullptr },
-  { "filetype-py", py_png_ptr, nullptr },
-  { "filetype-qt", qt_png_ptr, nullptr },
-  { "filetype-rar", rar_png_ptr, nullptr },
-  { "filetype-rb", rb_png_ptr, nullptr },
-  { "filetype-rtf", rtf_png_ptr, nullptr },
-  { "filetype-sass", sass_png_ptr, nullptr },
-  { "filetype-scss", scss_png_ptr, nullptr },
-  { "filetype-sql", sql_png_ptr, nullptr },
-  { "filetype-tga", tga_png_ptr, nullptr },
-  { "filetype-tgz", tgz_png_ptr, nullptr },
-  { "filetype-tiff", tiff_png_ptr, nullptr },
-  { "filetype-txt", txt_png_ptr, nullptr },
-  { "filetype-wav", wav_png_ptr, nullptr },
-  { "filetype-xls", xls_png_ptr, nullptr },
-  { "filetype-xlsx", xlsx_png_ptr, nullptr },
-  { "filetype-xml", xml_png_ptr, nullptr },
-  { "filetype-yml", yml_png_ptr, nullptr },
-  { "filetype-zip", zip_png_ptr, nullptr },
+  { "proxivision", icon_proxivision_ptr, nullptr },
+  { "document-new", icon_document_new_ptr, nullptr },
+  { "document-open", icon_document_open_ptr, nullptr },
+  { "document-save", icon_document_save_ptr, nullptr },
+  { "document-save-as", icon_document_save_as_ptr, nullptr },
+  { "document-save-all", icon_document_save_all_ptr, nullptr },
+  { "edit-cut", icon_edit_cut_ptr, nullptr },
+  { "edit-copy", icon_edit_copy_ptr, nullptr },
+  { "edit-delete", icon_edit_delete_ptr, nullptr },
+  { "edit-paste", icon_edit_paste_ptr, nullptr },
+  { "edit-redo", icon_edit_redo_ptr, nullptr },
+  { "edit-undo", icon_edit_undo_ptr, nullptr },
+  { "format-shift-left", icon_format_shift_left_ptr, nullptr },
+  { "format-shift-right", icon_format_shift_right_ptr, nullptr },
+  { "search", icon_search_ptr, nullptr },
+  { "search-next", icon_search_next_ptr, nullptr },
+  { "search-prev", icon_search_prev_ptr, nullptr },
+  { "go-backward", icon_go_backward_ptr, nullptr },
+  { "go-forward", icon_go_forward_ptr, nullptr },
+  { "fonts", icon_go_forward_ptr, nullptr },
+  { "filetype-_blank", icon__blank_ptr, nullptr },
+  { "filetype-_page", icon__page_ptr, nullptr },
+  { "filetype-aac", icon_aac_ptr, nullptr },
+  { "filetype-ai", icon_ai_ptr, nullptr },
+  { "filetype-aiff", icon_aiff_ptr, nullptr },
+  { "filetype-avi", icon_avi_ptr, nullptr },
+  { "filetype-bmp", icon_bmp_ptr, nullptr },
+  { "filetype-c", icon_c_ptr, nullptr },
+  { "filetype-cpp", icon_cpp_ptr, nullptr },
+  { "filetype-css", icon_css_ptr, nullptr },
+  { "filetype-csv", icon_csv_ptr, nullptr },
+  { "filetype-dat", icon_dat_ptr, nullptr },
+  { "filetype-dmg", icon_dmg_ptr, nullptr },
+  { "filetype-doc", icon_doc_ptr, nullptr },
+  { "filetype-dotx", icon_dotx_ptr, nullptr },
+  { "filetype-dwg", icon_dwg_ptr, nullptr },
+  { "filetype-dxf", icon_dxf_ptr, nullptr },
+  { "filetype-eps", icon_eps_ptr, nullptr },
+  { "filetype-exe", icon_exe_ptr, nullptr },
+  { "filetype-flv", icon_flv_ptr, nullptr },
+  { "filetype-gif", icon_gif_ptr, nullptr },
+  { "filetype-h", icon_h_ptr, nullptr },
+  { "filetype-hpp", icon_hpp_ptr, nullptr },
+  { "filetype-html", icon_html_ptr, nullptr },
+  { "filetype-ics", icon_ics_ptr, nullptr },
+  { "filetype-iso", icon_iso_ptr, nullptr },
+  { "filetype-java", icon_java_ptr, nullptr },
+  { "filetype-jpg", icon_jpg_ptr, nullptr },
+  { "filetype-js", icon_js_ptr, nullptr },
+  { "filetype-key", icon_key_ptr, nullptr },
+  { "filetype-less", icon_less_ptr, nullptr },
+  { "filetype-mid", icon_mid_ptr, nullptr },
+  { "filetype-mp3", icon_mp3_ptr, nullptr },
+  { "filetype-mp4", icon_mp4_ptr, nullptr },
+  { "filetype-mpg", icon_mpg_ptr, nullptr },
+  { "filetype-odf", icon_odf_ptr, nullptr },
+  { "filetype-ods", icon_ods_ptr, nullptr },
+  { "filetype-odt", icon_odt_ptr, nullptr },
+  { "filetype-otp", icon_otp_ptr, nullptr },
+  { "filetype-ots", icon_ots_ptr, nullptr },
+  { "filetype-ott", icon_ott_ptr, nullptr },
+  { "filetype-pdf", icon_pdf_ptr, nullptr },
+  { "filetype-php", icon_php_ptr, nullptr },
+  { "filetype-png", icon_png_ptr, nullptr },
+  { "filetype-ppt", icon_ppt_ptr, nullptr },
+  { "filetype-psd", icon_psd_ptr, nullptr },
+  { "filetype-py", icon_py_ptr, nullptr },
+  { "filetype-qt", icon_qt_ptr, nullptr },
+  { "filetype-rar", icon_rar_ptr, nullptr },
+  { "filetype-rb", icon_rb_ptr, nullptr },
+  { "filetype-rtf", icon_rtf_ptr, nullptr },
+  { "filetype-sass", icon_sass_ptr, nullptr },
+  { "filetype-scss", icon_scss_ptr, nullptr },
+  { "filetype-sql", icon_sql_ptr, nullptr },
+  { "filetype-tga", icon_tga_ptr, nullptr },
+  { "filetype-tgz", icon_tgz_ptr, nullptr },
+  { "filetype-tiff", icon_tiff_ptr, nullptr },
+  { "filetype-txt", icon_txt_ptr, nullptr },
+  { "filetype-wav", icon_wav_ptr, nullptr },
+  { "filetype-xls", icon_xls_ptr, nullptr },
+  { "filetype-xlsx", icon_xlsx_ptr, nullptr },
+  { "filetype-xml", icon_xml_ptr, nullptr },
+  { "filetype-yml", icon_yml_ptr, nullptr },
+  { "filetype-zip", icon_zip_ptr, nullptr },
 };
  
 FX::FXIcon* getEmbeddedIcon(FX::FXApp* app, EMBED_ICON::eID idIcon) 
@@ -607,7 +607,7 @@ ProxivisionWindow::ProxivisionWindow(FX::FXApp *a, FX::FXIcon* pvicon) :
   // splitter->setBarSize(420);
 
   // Info about the editor
-  //FX::FXIcon* pvicon = FX::FXIconSource::defaultIconSource.loadIconData(a, ___proxivision_proxivision_png_ptr, "png");
+  //FX::FXIcon* pvicon = FX::FXIconSource::defaultIconSource.loadIconData(a, ___proxivision_proxivision_ptr, "png");
   //Proxivision::instance()->getIconFromFile(
    //                    "/home/igor/Projects/ProxivisionWorkspace/proxivision/proxivision.png");
   new FX::FXButton(statusbar, "\tAbout Proxivision\tAbout the Proxivision IDE.",
