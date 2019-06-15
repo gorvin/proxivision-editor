@@ -262,7 +262,7 @@ int main(int argc, char* argv[])
 
   //TODO: Ovo bi sve moglo u Proxivision::run
   bool finish=false;
-  char const* pipename = "mojstdout";
+  char const* pipename = "proxivision_stdout.pipe";
   //TODO: obrisati postojeci pipename u slucaju da nije fifo
   FX::FXPipe::create(pipename);
   StdoutRedirect thr(win, finish, pipename);
@@ -271,7 +271,7 @@ int main(int argc, char* argv[])
   int status = app.run();
 
   finish = true;
-  printf("Odblokiraj\n");
+  printf("Finishing, releasing resources\n");
   while(finish) FX::FXThread::sleep(1000000);
 
   return status;

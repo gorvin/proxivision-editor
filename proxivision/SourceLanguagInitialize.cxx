@@ -162,6 +162,8 @@ SourceLanguage::SourceLanguage(void)
     {
         auto itLangs = jsRoot.find("scintilla_langs");
         if (jsRoot.end() != itLangs) {
+
+            printf("\nFound configured language %s\n", itLangs->first.c_str());
             auto& jsLangs = itLangs->second;
             if (!jsLangs.is<picojson::object>()) {
                 throw std::runtime_error("Langs JSON value is not an object");
@@ -246,7 +248,7 @@ SourceLanguage::SourceLanguage(void)
                                     spStyle->spBg.reset(new unsigned long(getRGB(itBg->second.get<std::string>(), &namedColors)));
                                 }
                                 auto itBold = jsOneStyle.find("bold");
-                                if(jsOneStyle.end() != itBold && !itBold->second.is<bool>()) {
+                                if(jsOneStyle.end() != itBold && itBold->second.is<bool>()) {
                                     spStyle->spbBold.reset(new bool(itBold->second.get<bool>()));
                                 }
                                 auto itItalic = jsOneStyle.find("italic");
@@ -254,6 +256,7 @@ SourceLanguage::SourceLanguage(void)
                                     spStyle->spbItalic.reset(new bool(itItalic->second.get<bool>()));
                                 }
                             }   
+                            printf("Adding style %s child of %s\n", spStyle->name.c_str(), spStyle->styleClassName.c_str());
 
                             spLd->styles.push_back(spStyle);
                         }

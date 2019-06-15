@@ -78,8 +78,7 @@
                 "string_var": { "class": "GSTRING" },
                 "number": { "class": "GNUMBER" }
             },
-            "keywords": [
-                [
+            "keywords": [[
                     "add_custom_command add_custom_target add_definitions add_dependencies ",
                     "add_executable add_library add_subdirectory add_test aux_source_directory ",
                     "build_command build_name cmake_minimum_required configure_file ",
@@ -129,7 +128,7 @@
             "styles": {
                 "subclasses": [ "plain", "comment", "commentline", "commentdoc", "number", "word", "string", "character",
                     "uuid", "preprocessor", "operator", "identifier", "stringeol", "verbatim", "regex", "commentlinedoc",
-                    "word2", "commentdockeyword", "commentdockeyworderror", "globalclass"
+                    "word2", "commentdockeyword", "commentdockeyworderror", "globalclass", "stringraw", "tripleverbatim"
                 ],
                 "comment": { "class": "GCOMMENT" },
                 "commentline": { "class": "GCOMMENT" },
@@ -145,7 +144,9 @@
                 "word2": { "class": "GKEYWORD2", "bold": true },
                 "commentdockeyword": { "class": "GKEYWORD1", "bold": true },
                 "commentdockeyworderror": { "class": "GKEYWORD1", "bold": true },
-                "globalclass": { "class": "GKEYWORD3", "bold": true }
+                "globalclass": { "class": "GKEYWORD3", "bold": true },
+                "stringraw": { "class": "GSTRING" },
+                "tripleverbatim": { "class": "GKEYWORD2" }
             },
             "keywords": [[
                 "if else switch case default break goto return for while do continue typedef ",

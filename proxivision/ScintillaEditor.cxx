@@ -312,6 +312,11 @@ int ScintillaEditor::load_file(FX::FXString const& path, FX::FXString const& fil
 
 void ScintillaEditor::apply_style(FX::FXString const& path, FX::FXString const& filename)
 {
+  sendMessage(SCI_STYLECLEARALL, 0, 0);
+  sendMessage(SCI_STYLESETFONT, STYLE_CALLTIP, (sptr_t) FX::FXApp::instance()->getNormalFont()->getName().text());
+  sendMessage(SCI_STYLESETSIZE, STYLE_CALLTIP, FX::FXApp::instance()->getNormalFont()->getSize()/10);
+  sendMessage(SCI_CALLTIPUSESTYLE,32,1);
+
   auto spLang = srclng.find(filename);
   if(!spLang) {
       printf("Unexpected error: not found any lexer\n");
@@ -324,14 +329,14 @@ void ScintillaEditor::apply_style(FX::FXString const& path, FX::FXString const& 
   // if(imax>32) 
   //   imax=32;//TODO: dozvoli i indekse vece od 32 za neke egzoticne lexere
   
-  size_t idxStyle = 0;
-  for(auto& srcstyle: spLang->styles) {
-    auto style = srcstyle->getStyle();
+  ;
+  for(size_t idxStyle = 0; idxStyle<spLang->styles.size(); ++idxStyle) {
+    auto style = spLang->styles[idxStyle]->getStyle();
     sendMessage(SCI_STYLESETFORE, idxStyle, style.ulFg);
     sendMessage(SCI_STYLESETBACK, idxStyle, style.ulBg);
-    sendMessage(SCI_STYLESETBOLD, idxStyle, style.bBold);
-    sendMessage(SCI_STYLESETITALIC, idxStyle, style.bItalic);
-    ++idxStyle;
+    sendMessage(SCI_STYLESETBOLD, idxStyle, style.bBold ? 1 : 0);
+    sendMessage(SCI_STYLESETITALIC, idxStyle, style.bItalic ? 1 : 0);
+    printf("Adding style %lu fg=0x%08lx fg=0x%08lx\n", idxStyle, style.ulFg, style.ulBg);
   }
   sendMessage(SCI_SETTABWIDTH, 4, 0);
 
@@ -351,15 +356,22 @@ void ScintillaEditor::apply_style(FX::FXString const& path, FX::FXString const& 
   }
   sendMessage(SCI_SETUSETABS, usetabs, 0);
   sendMessage(SCI_SETTABWIDTH, Proxivision::instance()->defaults_edit.TabWidth, 0); // TODO: is cfg json-a
+  sendMessage(SCI_SETLEXER, spLang->id, 0);
+  // sendMessage(SCI_SETSTYLEBITS, sendMessage(SCI_GETSTYLEBITSNEEDED,0,0), 0);
 
-  size_t idxWord = 0;
-  for(auto& words: spLang->keywords) {
+  for(size_t idxWord = 0; idxWord<KEYWORDSET_MAX; ++idxWord) {
+    sendMessage(SCI_SETKEYWORDS, idxWord, (sptr_t)"");
+  }
+  for(size_t idxWord = 0; idxWord<spLang->keywords.size(); ++idxWord) {
+    auto& words = spLang->keywords[idxWord];
     sendMessage(SCI_SETKEYWORDS, idxWord, (sptr_t)(words.get()) );
-    //printf("Adding keywordset %lu\n", i);
-    ++idxWord;
+    printf("Adding keywordset %lu %s\n", idxWord, words.get());
   }
 
-  sendMessage(SCI_SETLEXER, spLang->id, 0);
+  sendMessage(SCI_SETPROPERTY, (sptr_t)"lexer.cpp.track.preprocessor", (sptr_t)"0");
+  sendMessage(SCI_SETPROPERTY, (sptr_t)"lexer.cpp.update.preprocessor", (sptr_t)"0");
+
+  //sendMessage(SCI_SETLEXER, spLang->id, 0);
 	sendMessage(SCI_COLOURISE, 0, -1);
 }
 
